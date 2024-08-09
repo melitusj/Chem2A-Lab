@@ -1,0 +1,28 @@
+---
+title: "Stoichiometry Data"
+author: "Melissa Anderson"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(readxl)
+library(here)
+
+student_data <- read_excel(here("", "Stoichiometry II Data.xlsx"))
+student_data <- as.numeric(unlist(student_data))
+
+rel_student_data <- student_data/mean(student_data)
+```
+
+# Norming Results
+This is the distribution of student results for the %mass of sodium bicarbonate in Alka-Seltzer from Fall 2022, 2023 and Spring 2024
+```{r}
+hist(student_data)
+rel_sd <- sd(student_data)/mean(student_data)
+print(rel_sd)
+```
+Based on this, it looks like a 20% error is a good margin for evaluation.
