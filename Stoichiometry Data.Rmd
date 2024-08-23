@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(readxl)
 library(here)
 
-student_data <- read_excel(here("", "Stoichiometry II Data.xlsx"))
+student_data <- read_excel(here("", "Stoichiometry II Data.xlsx")) 
 student_data <- as.numeric(unlist(student_data))
 
 rel_student_data <- student_data/mean(student_data)
