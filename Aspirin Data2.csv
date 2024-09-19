@@ -1,0 +1,287 @@
+﻿Part 1,
+Answer,Count of students
+0.5,7
+0.52,4
+0.51,2
+0.01,2
+0.49,1
+0.52,1
+0.51,1
+Part 2,
+Answer,Count of students
+31.32,3
+43.53,3
+29.92,2
+30.92,2
+42.74,2
+30.02,2
+20,1
+29.8,1
+20.72,1
+0.29,1
+Part 3,
+Answer,Count of students
+32.03,3
+43.85,3
+30.35,2
+31.62,2
+43.3,2
+30.48,2
+20.22,1
+29.83,1
+21.07,1
+0.29,1
+Part 4,
+Answer,Count of students
+100,4
+138,3
+114,2
+102.3,2
+112,1
+104.1,1
+100,1
+115.7,1
+102,1
+131,1
+121.3,1
+Part 5,
+Answer,Count of students
+118.6,4
+140,4
+121,2
+101.5,2
+105.3,2
+113,1
+101,1
+118,1
+123,1
+Part 6,
+Answer,Count of students
+Dark purple,17
+Light yellow,1
+Part 7,
+Answer,Count of students
+Dark purple,8
+Light yellow,3
+Slight pink/peach,7
+Part 8,
+Answer,Count of students
+Dark purple,5
+Light yellow,5
+Slight pink/peach,8
+Part 9,
+Answer,Count of students
+4.1,2
+1.2,2
+1.23,2
+5,2
+4.5,2
+4.6,1
+4.15,1
+3.3,1
+3.5,1
+3.2,1
+".6, 1.2",1
+1,1
+4.2,1
+Part 10,
+Answer,Count of students
+1.5,3
+4.1,2
+1.3,2
+"2.2, 3.05",2
+4.4,2
+"1.9,3.3",1
+4.6,1
+3.2,1
+"3.2,4.2,4.5",1
+1,1
+"1.9, 3.3",1
+"3.2, 4.2, 4.5",1
+Part 11,
+Answer,Count of students
+0.3,2
+3.9,2
+1.44,2
+2.7,2
+4.5,2
+"1.6,3.3",1
+4.8,1
+3.2,1
+"3.2,4.2,4.7",1
+0.3,1
+1,1
+"1.6, 3.3",1
+"3.2, 4.2, 4.7",1
+Part 12,
+Answer,Count of students
+4.2,3
+6.2,2
+4.3,2
+1.2,2
+4.8,2
+6.7,2
+5.7,2
+5,1
+3.2,1
+5,1
+Part 13,
+Answer,Count of students
+4.2,3
+6.2,2
+4.3,2
+1.22,2
+4.8,2
+6.7,2
+5.7,2
+5,1
+3.2,1
+4,1
+Part 14,
+Answer,Count of students
+4.2,3
+6.3,2
+4.3,2
+1.11,2
+4.8,2
+6.7,2
+5.7,2
+5,1
+3.2,1
+6,1
+Part 15,
+Answer,Count of students
+0.66,2
+1.025,2
+0.69,2
+0.75,2
+0.79,2
+0.29,1
+0.92,1
+0.97,1
+1,1
+0.28,1
+"0.142 , 0.29",1
+0.2,1
+0.965,1
+Part 16,
+Answer,Count of students
+0.35,2
+1.065,2
+0.66,2
+"0.31,0.53",1
+0.92,1
+0.95,1
+"0.46, 0.64",1
+"0.46,0.65",1
+1,1
+"0.56,0.74,0.79",1
+0.36,1
+0.25,1
+"0.31, 0.53",1
+"0.56, 0.74, 0.79",1
+0.953,1
+Part 17,
+Answer,Count of students
+0.07,3
+1.297,2
+0.56,2
+0.67,2
+"0.25, 0.52",1
+0.96,1
+0.91,1
+1,1
+"0.56,0.74,0.82",1
+0.17,1
+"0.25, 0.55",1
+"0.56, 0.74, 0.82",1
+0.907,1
+Part 18,
+Answer,Count of students
+0.0036,7
+0.0037,4
+0.0038,3
+0.000072,2
+0.0038,1
+0.0035,1
+Part 19,
+Answer,Count of students
+0.65,3
+0.64,3
+0.67,2
+0.011,2
+0.61,1
+0.68,1
+0.63,1
+0.56,1
+0.73,1
+0.66,1
+0.62,1
+83,1
+Part 20,
+Answer,Count of students
+50,3
+5400,2
+68,2
+62,1
+55,1
+32,1
+4.62,1
+88.8,1
+88,1
+54,1
+105,1
+107.58,1
+64,1
+0.55,1
+Part 21,
+Answer,Count of students
+salicylic acid,8
+Salicylic acid,5
+Salicylic Acid,5
+Part 22,
+Answer,Count of students
+Positive,8
+Negative,3
+Unclear,7
+Part 23,
+Answer,Count of students
+The sample is significantly contaminated with unreacted salicylic acid,8
+All of the salicylic acid has been reacted away.,3
+The sample is slightly contaminated with unreacted salicylic acid,7
+Part 24,
+Answer,Count of students
+I have drawn out an equation with structural formulas for the reaction.,18
+Part 25,
+Answer,Count of students
+The number of moles of acetic anhydride was greater than the number of moles that would react completely with the amount of salicylic acid in the reaction mixture. Excess acetic anhydride was therefore left over in the reaction mixture after all the salicylic acid had been converted to product. The acetic anhydride remaining at the end of the reaction was decomposed by adding water to the reaction mixture prior to crystallization.,2
+Using excess acetic anhydride means that the salicylic acid would be the limiting.,1
+Being used in excess means that we added more acetic anhydride than what was needed for this reaction. The excess reaction was decomposed at the end when we added water.,1
+"It became hydrolyzed when water was added to the cooling mixture. At this time, the aspirin precipitate began to form.",1
+there was more acetic anhydride present in the reaction mixture,1
+Using acetic anhydride in excess just means that we used more than what was necessary to complete the reaction. We used water to decompose the excess acetic anhydride at the end of the reaction.,1
+The chemical with greater amount that is not necessary needed,1
+Having excess ensures that all of the salicylic acid is consumed and converted into aspirin,1
+The acetic anhydride was the excess reagent,1
+using excess acetic anhydride ensures the completion of the reaction while maintaining the efficiency of the process. Acetic anhydride reacts with water to form acetic acid hydrolyzing the excess acetic anhydride,1
+we used an excess to make sure our experiment would go through completion.,1
+acetic anhydride was used in excess to react with the salicylic acid. The excess was decomposed by adding water.,1
+It means that there was a reaction between the acids to form an Easter,1
+"when water is added to the mixture, the excess acetic anhydride will be destroyed. the water reacts with acetic anhydride to form 2 molecules of acetic acid",1
+Water will react with acetic anhydride and make the process slower to make aspirin and therefore stop the reaction. Acetic anhydride was used in excess so that way the reaction could shift towards the products and not the reactants.,1
+There more reactant,1
+Acetic anhydride is more reactive and acts as a catalyst,1
+Part 26,
+Answer,Count of students
+The sample is most likely pure,4
+The sample is most likely impure,14
+Part 27,
+Answer,Count of students
+The sample is still somewhat wet,18
+Part 28,
+Answer,Count of students
+The sample is most likely pure,12
+The sample is most likely impure,6
+Part 29,
+Answer,Count of students
+salicylic acid,18

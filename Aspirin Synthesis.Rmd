@@ -7,9 +7,65 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(janitor)
+library(tidyverse)
 ```
 
 ```{r}
+aspirin.data.F2023 <- read_csv("Aspirin Data.csv") %>% clean_names() %>% mutate(term="Fall 2023")
+aspirin.data.Sp2023 <- read_csv("Aspirin Data2.csv")  %>% clean_names() %>% mutate(term="Spring 2023")
+
+aspirin.data <- rbind(aspirin.data.F2023,aspirin.data.Sp2023)
+part = NA
+
+for (i in 1:nrow(aspirin.data)){
+
+if(grepl("Part",aspirin.data$part_1[i])){
+  part = aspirin.data$part_1[i]
+}
+  aspirin.data$part[i] <- part
+  aspirin.data$answer[i] <- aspirin.data$part_1[i]
+  aspirin.data$num.students[i] <- aspirin.data$x2[i]
+  aspirin.data$term[i] <- aspirin.data$term[i]
+}
+
+aspirin.data <- aspirin.data[,c("part","answer","num.students","term")] %>%
+  filter(!grepl("Answer",answer), !is.na(part),!grepl("Part",answer))
+
+clean.data <- data.frame("part"=c(),"answer"=c(),"dummy.id"=c(),"term"=c())
+for (i in 1:nrow(aspirin.data)){
+  
+  part = aspirin.data$part[i]
+  answer = aspirin.data$answer[i]
+  n.repeats = aspirin.data$num.students[i]
+  term = aspirin.data$term[i]
+
+  for (j in 1:n.repeats){
+    new.row <- c(part,answer,paste(i,j),term)
+    clean.data = rbind(clean.data,new.row)
+  }
+}
+
+final.aspirin.data <- clean.data %>% rename("part" = X.Part.1., 
+                                            "answer" = X.0.5.,
+                                            "dummy.id"= X.1.1.,
+                                            "term" = X.Fall.2023.) 
+```
+
+```{r}
+melting.points.low <- final.aspirin.data %>% filter(part == "Part 4") %>% mutate(boundary = "low")
+melting.points.high <- final.aspirin.data %>% filter(part == "Part 5")%>% mutate(boundary = "high")
+melting.points.low$answer <- as.numeric(melting.points.low$answer)
+melting.points.high$answer <- as.numeric(melting.points.high$answer)
+
+melting.points <- full_join(melting.points.high,melting.points.low)
+melting.points$dummy.id <- NULL
+melting.points$part <- NULL
+
+melting.points %>%
+  ggplot( aes(y=answer, fill=boundary)) +
+    geom_boxplot( color="#e9ecef", alpha=0.6, position = 'identity') +
+    scale_fill_manual(values=c("#69b3a2", "#404080")) + facet_wrap(~term)
 
 ```
 
