@@ -6,7 +6,11 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(
+	echo = FALSE,
+	message = FALSE,
+	warning = FALSE
+)
 library(janitor)
 library(tidyverse)
 ```
@@ -30,7 +34,8 @@ if(grepl("Part",aspirin.data$part_1[i])){
 }
 
 aspirin.data <- aspirin.data[,c("part","answer","num.students","term")] %>%
-  filter(!grepl("Answer",answer), !is.na(part),!grepl("Part",answer))
+  filter(!grepl("Answer",answer), !is.na(part),!grepl("Part",answer)) %>%
+  filter(!is.na(num.students))
 
 clean.data <- data.frame("part"=c(),"answer"=c(),"dummy.id"=c(),"term"=c())
 for (i in 1:nrow(aspirin.data)){
@@ -63,9 +68,15 @@ melting.points$dummy.id <- NULL
 melting.points$part <- NULL
 
 melting.points %>%
-  ggplot( aes(y=answer, fill=boundary)) +
+  ggplot( aes(y=answer, fill=boundary, x = term)) +
     geom_boxplot( color="#e9ecef", alpha=0.6, position = 'identity') +
-    scale_fill_manual(values=c("#69b3a2", "#404080")) + facet_wrap(~term)
+    scale_fill_manual(values=c("#69b3a2", "#404080")) #+ facet_wrap(~term)
 
+```
+```{r}
+iron.chloride.test <- final.aspirin.data %>% filter(part == "Part 7") 
+
+iron.chloride.test %>% ggplot(aes(x=answer,fill=answer)) + 
+  geom_bar() + facet_wrap(~term)
 ```
 

@@ -159,11 +159,10 @@ Part 18,
 Answer,Count of students
 0.0036,3
 0.0037,2
+0.0039,2
 0.0038,2
-0.0039,1
 0.0036,1
 0.0037,1
-"2,762.40",1
 Part 19,
 Answer,Count of students
 0.67,4
@@ -223,4 +222,5 @@ The sample is most likely pure,9
 The sample is most likely impure,1
 Part 29,
 Answer,Count of students
+salicylic acid,10
 salicylic acid,10
